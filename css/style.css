@@ -10,3 +10,9 @@
     background-color: white;
     margin:1rem ;
 }
+
+.delete{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 33px;
+}

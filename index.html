@@ -29,7 +29,7 @@
                     <button class="element">
                         {{item.elemento}}
                     </button>
-                    <button>
+                    <button class="delete" @click="list.splice(index, 1)">
                         <i class="fa-solid fa-x"></i>
                     </button>
                 </li>
