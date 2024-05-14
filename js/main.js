@@ -3,6 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            inputText: '',
+            newindex:'',
             list: [
                 {
                     elemento: 'case',
@@ -17,8 +19,25 @@ createApp({
                     elemento: 'fogli di giornale',
                 },
             ],
-            inputText: '',
             
+            newindex: 4
+
         }
-    }
+    },
+        methods: {
+            addIdx:function(){
+                if (this.inputText){
+                    this.list.push({
+                        index:this.newindex++,
+                        elemento:this.inputText,
+                    })
+                }
+                this.inputText=''
+            }
+    
+
+
+},
+
+
 }).mount('#app')

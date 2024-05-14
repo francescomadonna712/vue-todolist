@@ -4,3 +4,9 @@
     margin: 0;
     font-family: sans-serif;
 }
+
+.element{
+    border: none;
+    background-color: white;
+    margin:1rem ;
+}

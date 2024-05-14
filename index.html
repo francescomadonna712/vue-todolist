@@ -20,15 +20,17 @@
         </header>
 
         <main>
-            <input v-model="inputText" class="input-text">
-            <button class="add">inserisci</button>
+            <form @submit.prevent="addIdx">
+                <input v-model="inputText" class="input-text">
+                <button class="add" type="submit">inserisci</button>
+            </form>
             <ul>
                 <li v-for="(item, index) in list">
-                    <button>
+                    <button class="element">
                         {{item.elemento}}
                     </button>
                     <button>
-
+                        <i class="fa-solid fa-x"></i>
                     </button>
                 </li>
             </ul>
